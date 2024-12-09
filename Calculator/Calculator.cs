@@ -8,7 +8,8 @@ public class Calculator
     private static double pi = 3.1415926;
     public string expression { get; set; } 
     public float result { get; set; }
-    private static string historyPath= @"c:\\Users\\Sabina\\RiderProjects\\Calculator\\Calculator\\history.json";
+    private static string historyPath = Path.Combine(Directory.GetCurrentDirectory(), "history.json");
+    
 
 
     private static readonly Lazy<Calculator> lazy =
@@ -25,6 +26,7 @@ public class Calculator
 
     public float calculate(string expression)
     {
+        Console.WriteLine(historyPath);
         float res = 1;
         this.expression = expression;
         expression = expression.Replace(" ","");

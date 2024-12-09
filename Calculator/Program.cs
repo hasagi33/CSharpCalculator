@@ -32,7 +32,7 @@ namespace Calculator
                                     break;
                                 }
 
-                                calculator.calculate(userExpression);
+                                Console.WriteLine("Result: "+calculator.calculate(userExpression));
                                 // because c# doesnt allow escaping characters, we need to set options as relaxed
                                 calculator.addHistory();
                             }
@@ -53,7 +53,7 @@ namespace Calculator
                                 {
                                     break;
                                 }
-                                calculator.sqrt(userExpression);
+                                Console.WriteLine("Result: "+calculator.sqrt(userExpression));
                                 calculator.addHistory();
                             }
                             catch (Exception e)
