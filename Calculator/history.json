@@ -1,0 +1,13 @@
+[{
+  "expression": "1+4",
+  "result": 5
+},{
+  "expression": "12*15",
+  "result": 180
+},{
+  "expression": "11/5.555",
+  "result": 1.980198
+},{
+  "expression": "Sqrt(144)",
+  "result": 12
+}]
