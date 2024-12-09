@@ -26,7 +26,6 @@ public class Calculator
 
     public float calculate(string expression)
     {
-        Console.WriteLine(historyPath);
         float res = 1;
         this.expression = expression;
         expression = expression.Replace(" ","");
